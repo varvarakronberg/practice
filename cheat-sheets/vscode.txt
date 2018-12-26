@@ -1,0 +1,7 @@
+Debug program: F5
+
+Run program: CTRL-F5
+
+Command pane: CTRL-SHIFT-P
+
+Terminal: CTRL-SHIFT-`
