@@ -1,0 +1,19 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "Semi-regular coding practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varvarakronberg/practice.git"
+  },
+  "author": "Varvara Kronberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varvarakronberg/practice/issues"
+  },
+  "homepage": "https://github.com/varvarakronberg/practice#readme"
+}

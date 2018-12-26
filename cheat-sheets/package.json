@@ -1,0 +1,22 @@
+{
+  "name": "cheat-sheets",
+  "version": "1.0.0",
+  "description": "A set of code snippents containing single concepts in JS or programming in general",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varvarakronberg/practice.git"
+  },
+  "author": "Varvara Kronberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varvarakronberg/practice/issues"
+  },
+  "homepage": "https://github.com/varvarakronberg/practice#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
