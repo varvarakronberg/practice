@@ -4,6 +4,6 @@
 
 var readLine = require('readline-sync');
 var userInput = readLine.question('What is your name?');
-for (var i = 0; i < 10; i++){
-  console.log(userInput.toUpperCase());  
+for (var i = 0; i < 10; i++) {
+  console.log(userInput.toUpperCase());
 }
