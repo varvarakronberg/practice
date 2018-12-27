@@ -2,10 +2,13 @@
  * 1. Write a function that calculates a sum of array
  * 2. Print a sum of a sample array, generated randomly, of 5-10 elements, each number in the range 0-100.
  */
-var inputNumbers = [1, 1, 2, 2, 3, 3];
-var inputNumbers2 = [10, 1, 2, 2, 3, 3];
-console.log(arraySum(inputNumbers));
-console.log(arraySum(inputNumbers2));
+
+var newarr = Array.from(
+    { length: 5 + Math.floor(Math.random() * 5) },
+    () => Math.floor(Math.random() * 100));
+console.log(newarr, arraySum(newarr));
+
+
 
 /**
  * 
