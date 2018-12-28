@@ -10,7 +10,10 @@
  *  d - right
  */
 
-var player_position = { x: 0, y: 0 };
+var player_position = {
+    x: 0,
+    y: 0
+};
 
 /**
  * ! while forever
@@ -32,35 +35,40 @@ while (true) {
     printBoard(player_position);
 }
 
-
-//
 function handleUserInput(move, pos) {
     if (move == 'w') {
-        if (pos.y > 0) pos.y--;
-    }
-
+        if (pos.y > 0) 
+            pos.y--;
+        }
+    
     if (move == 's') {
-        if (pos.y < 4) pos.y++;
-    }
-
+        if (pos.y < 4) 
+            pos.y++;
+        }
+    
     if (move == 'a') {
-        if (pos.x > 0) pos.x--;
-    }
-
+        if (pos.x > 0) 
+            pos.x--;
+        }
+    
     if (move == 'd') {
-        if (pos.x < 4) pos.x++;
-    }    
-}
+        if (pos.x < 4) 
+            pos.x++;
+        }
+    }
 
 function printBoard(pos) {
 
     for (var y = 0; y < 5; y++) {
         for (var x = 0; x < 5; x++) {
             if (x == pos.x && y == pos.y) {
-                process.stdout.write(`*`);
-            }
-            else {
-                process.stdout.write(`.`);
+                process
+                    .stdout
+                    .write('*');
+            } else {
+                process
+                    .stdout
+                    .write('.');
             }
 
         }
@@ -68,4 +76,3 @@ function printBoard(pos) {
     }
     console.log();
 }
-

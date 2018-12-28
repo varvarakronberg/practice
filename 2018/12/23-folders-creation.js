@@ -11,32 +11,31 @@ folderC";
 
 */
 
-var folders =
-{
-    "parent": {
-        "Season 1. 3": {
-            "subfolder1": {
-                "subfolder1": {
-                    "subfolder1": null,
-                    "subfolder2": null
+var folders = {
+    'parent': {
+        'Season 1. 3': {
+            'subfolder1': {
+                'subfolder1': {
+                    'subfolder1': null,
+                    'subfolder2': null
                 },
-                "subfolder2": {
-                    "subfolder1": null,
-                    "subfolder2": null
-                },
+                'subfolder2': {
+                    'subfolder1': null,
+                    'subfolder2': null
+                }
             },
-            "subfolder2": {
-                "subfolder1": null,
-                "subfolder2": {
-                    "subfolder1": null,
-                    "subfolder2": {
-                        "subfolder1": null,
-                        "subfolder2": null
-                    },
-                },
-            },
+            'subfolder2': {
+                'subfolder1': null,
+                'subfolder2': {
+                    'subfolder1': null,
+                    'subfolder2': {
+                        'subfolder1': null,
+                        'subfolder2': null
+                    }
+                }
+            }
         },
-        "folder2": null
+        'folder2': null
     }
 };
 
@@ -49,18 +48,12 @@ function createSubfolders(parentFolderPath, children) {
         var currentPath = parentFolderPath + '/' + folder;
         if (children[folder] != null) {
             createSubfolders(currentPath, children[folder]);
-        }
-        else {
-            console.log(`Creating ${currentPath}`)
+        } else {
+            console.log(`Creating ${currentPath}`);
             fs.ensureDirSync(currentPath);
         }
     }
 }
 
-
-
-
-
 // fs.ensureDirSync('./folder1/subfolder1');
-// fs.ensureDirSync('./folder1/subfolder2');
-// fs.ensureDirSync('./folder2');
+// fs.ensureDirSync('./folder1/subfolder2'); fs.ensureDirSync('./folder2');

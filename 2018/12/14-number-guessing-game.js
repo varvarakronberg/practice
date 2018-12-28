@@ -9,55 +9,35 @@ var min = 1;
 var max = 10;
 
 function getRandomArbitraryInt(min, max) {
-    return Math.floor(Math.random() * (max - min) + min)
+    return Math.floor(Math.random() * (max - min) + min);
 }
-var randomNumber = getRandomArbitraryInt(min, max)
+var randomNumber = getRandomArbitraryInt(min, max);
 var readLine = require('readline-sync');
 
 function turn() {
     var userInput = readLine.question('choose a number 1 to 10: ');
     if (userInput > randomNumber) {
-        console.log("your number is greater, try again");
+        console.log('your number is greater, try again');
         return false;
-    }
-    else if (userInput < randomNumber) {
-        console.log("your number is smaller, try again");
+    } else if (userInput < randomNumber) {
+        console.log('your number is smaller, try again');
         return false;
-    }
-    else {
+    } else {
         //console.log("congratulations!");
         return true;
     }
 
 }
 
-
-// if (turn())
-// {
-//     console.log("congrats!. game over")
-// }
-// else if (turn())
-// {
-//     console.log("congrats!. game over")
-// }
-// else if (turn())
-// {
-//     console.log("congrats!. game over")
-// }
-// else
-// {
-//     console.log("looser");
-// }
+// if (turn()) {     console.log("congrats!. game over") } else if (turn()) {
+//  console.log("congrats!. game over") } else if (turn()) {
+// console.log("congrats!. game over") } else {     console.log("looser"); }
 
 var numTurns = 1;
-while (!turn()) { numTurns++; }
-console.log("you guessed in " + numTurns + " tries!")
+while (!turn()) {
+    numTurns++;
+}
+console.log('you guessed in ' + numTurns + ' tries!');
 
-// do
-//   repeat (userInput, 2)
-// while (userInput != randomNumber);
-
-// function repeat(func, times) {
-//     func();
-//     --times && repeat(func, times);
-// }
+// do   repeat (userInput, 2) while (userInput != randomNumber); function
+// repeat(func, times) {     func();     --times && repeat(func, times); }

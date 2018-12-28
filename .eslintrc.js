@@ -10,20 +10,21 @@ module.exports = {
     },
     "rules": {
         "indent": [
-            "error",
-            4
+            "error", 4
         ],
         "linebreak-style": [
-            "error",
-            "windows"
+            "error", "windows"
         ],
         "quotes": [
-            "error",
-            "single"
+            "error", "single"
         ],
         "semi": [
-            "error",
-            "always"
+            "error", "always"
+        ],
+        "no-constant-condition": [
+            "error", {
+                "checkLoops": false
+            }
         ],
         "no-console": ["off"]
     }
