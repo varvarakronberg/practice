@@ -8,4 +8,3 @@ var array = [1, 2, 3];
 const map1 = array.map(i => i * 2);
 
 console.log(map1);
-
