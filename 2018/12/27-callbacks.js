@@ -5,20 +5,19 @@
 var readLine = require('readline-sync');
 
 passwordCheck(correct, incorrect);
-
 function correct() {
     console.log('CORRECT');
 }
 
 function incorrect() {
-    passwordCheck(correct, incorrect);
+    console.log("INCORRECT");
 }
 
-function passwordCheck(successCallback, failureCallback) {
+function passwordCheck(success, fail) {
     var userInput = readLine.question('password:');
     if (userInput != 'password') {
-        failureCallback();
+        fail();
     } else {
-        successCallback();
+        success();
     }
 }

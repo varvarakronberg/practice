@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/varvarakronberg/practice#readme",
   "dependencies": {
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.9",
+    "request": "^2.88.0",
+    "twilio": "^3.26.0"
   }
 }
