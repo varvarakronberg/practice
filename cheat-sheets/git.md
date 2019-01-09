@@ -27,10 +27,11 @@ Flow:
 3. To add changes, do 2 commands: `git add .`, then `git commit -m "message"`
 4. To save changes to github, do `git push`
 
-5. No changes, you do `git pull`
+5. (After step 1) If there's no changes, you do `git pull`
+
 6. Do work
 
-7. Do steps 1-4. 
+7. Do steps 1-4 again in the end.
 
 
 ### git branch ... ###
